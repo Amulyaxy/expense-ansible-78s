@@ -11,7 +11,7 @@
     ansible.builtin.systemd:
       name : mysqld
       state: started
-      enable: yes
+      enabled: yes
   # check password is already setup or not
   - name: check DB connection
     community.mysql.mysql_info:
